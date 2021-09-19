@@ -1,0 +1,157 @@
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+body{
+	/*background-color: blueviolet;*/
+  background-color: #7CB9E8;
+}
+
+
+
+#mySidenav a {
+  position: fixed;
+  right: -60px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  margin-top:150px;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#home {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+
+#about {
+  top: 200px;
+  background-color: #F3E31E;
+}
+
+#login{
+  top:260px;
+  background-color: #8EDC30;
+  padding-right: 20px;
+}
+
+#signup{
+  top:320px;
+  background-color: violet;
+  padding-right: 20px;
+}
+
+::-webkit-scrollbar { 
+display: none; 
+}
+
+.blog{
+  color:black;
+  /*background-color: #fff;*/
+  background-color: rgb(198, 239, 255);
+  padding: 5% 5% 5% 5%; 
+}
+
+#title{
+    color: rgb(95, 95, 95);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    overflow: auto;
+    vertical-align: middle;
+}
+
+a{cursor :pointer;}
+
+li{ list-style-type: none; }
+
+.blog-area{
+  margin-top: 30px; 
+  margin-bottom: 30px;
+}
+.blog{
+  color:black;
+  background-color: rgb(198, 239, 255);
+  padding: 5% 5% 5% 5%; 
+}
+
+#ft{
+  display: none;
+}
+
+#username{
+  margin-left: 30%;
+  font-family: 'Xanh Mono', monospace;
+}

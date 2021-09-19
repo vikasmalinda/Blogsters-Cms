@@ -1,0 +1,16 @@
+.box{
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.blog-hd{
+	color:#ECDD25;
+}
+
+li{
+	list-style-type: none;
+}

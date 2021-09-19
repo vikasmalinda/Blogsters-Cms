@@ -1,0 +1,30 @@
+#navb{
+    height: 70px;
+}
+#title{
+    color: rgb(95, 95, 95);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    overflow: auto;
+    vertical-align: middle;
+}
+.content{
+    margin-left: 18%;
+    margin-right: 18%;
+    padding: 2%;
+    background-color: rgb(230, 248, 255);   
+}
+#jumbo{
+    background-color: rgb(198, 239, 255);
+    padding-top: 0%;
+    padding-bottom: 1%;
+}
+.sign-form{
+    width: 55%;
+    margin-left: 20%;
+    background-color: white;
+}
+#signup{
+    background-color: white;
+}

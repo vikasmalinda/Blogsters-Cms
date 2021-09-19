@@ -1,0 +1,68 @@
+<link rel='stylesheet' href='stylesheets/cms.css'>
+<link rel='stylesheet' href='stylesheets/home.css'>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+{{!-- <div id="mySidebar" class="sidebar">
+			<a href="#"><img src="images/me.png" height="160px"/></a>
+			<div style="text-align: center;">USERNAME</div>
+			<br>
+			<a href="#"><button class="btn btn-primary">MY BLOGS</button></a>
+			<br>
+			<a href="index.html"><button class="btn btn-primary"><i class="fas fa-arrow-left"></i> HOME</button></a>
+		</div> --}}
+
+
+		<div id="main">
+
+			
+			<br>
+			<div class='filter-box'>
+			<form>
+				<div class="form-group">
+				<label for="Blog title">Search User Blogs</label>
+				<input type="text" class="form-control" id="email-id" placeholder="Enter User Email...">
+				</div>
+				<div><center><button type="button" class="btn btn-primary" onclick="Search()">Search</button><center></center></div>
+				
+				
+				<div class="row">
+				  <div class="form-group col-lg-6 ">
+				    <label for="blog category">By category: </label>
+				    <select class="form-control" id="blog-category">
+				      <option>Food</option>
+				      <option>Travel</option>
+				      <option>Politics</option>
+				      <option>Technology</option>
+				      <option>Health</option>
+				      <option selected>None</option>
+				    </select>
+				  </div>
+				</div>
+				<center></center><button type="button" class="btn btn-primary" onclick="Apply()">Apply</button>
+			</center>
+				
+
+			</form>
+			</div>
+
+			<div id="user" class="text-msg" style="text-align:center;
+			margin-top:5%; margin-bottom:0%; margin-left:5% margin-right:5%; display:none;"></div>
+			<div id="category" style="text-align:center;
+			margin-top:5%; margin-bottom:1%; margin-left:5% margin-right:5%; display:none;"></div>
+
+			<div class="container py-5 my-5 main" id="blg-id">
+				{{!-- <div id="nothing">Sorry!! Found Nothing...<img src='images/sad.png' height="30px;"/></div> --}}
+				<div class="loader" id="ld"></div>
+				{{!-- <div id="one" class="blog-item">
+					<div class="blog-content col-lg-11">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat diam ut venenatis tellus in metus vulputate. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Suscipit adipiscing bibendum est ultricies integer quis auctor. Quisque non tellus orci ac auctor. Dui id ornare arcu odio ut sem. Accumsan sit amet nulla facilisi morbi tempus iaculis. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Vel eros donec ac odio tempor orci dapibus ultrices in. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue.
+					</div>
+					<div class="options col-lg-1">
+						<div class="edit-option" onclick="edit(this.parentElement.parentElement.id)"><i class="fas fa-edit"></i></div>
+
+						<div class="delete-option"><i class="fas fa-trash"></i></div>
+
+					</div>
+				</div> --}}
+			</div>
+		</div>
+<script src="javascripts/cms.js"></script>		

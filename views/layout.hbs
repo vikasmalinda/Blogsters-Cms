@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/myblogs.css">
+    <title>Home</title>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      {{!-- <a class="navbar-brand" href="home.html" id="b-id" style="font-family: 'Chelsea Market', cursive;"><span class="blog-hd">BLOG</span><span class="h">STERS</span></div></a> --}}
+      <a class="navbar-brand" href="#">
+                    <img src="images/B.jpg" height="32px" width="32px"/> <span id="title"> BlogSter</span>
+                </a>
+      <span id="username" style="display:none; vertical-align:bottom; margin-left:13%;"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbr" id="navbarSupportedContent" style="font-size: 20px;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item  mx-3">
+            <a class="nav-link" href="index">Home</a>
+          </li>
+          <li id="cmsnv" class="nav-item  mx-3">
+            <a class="nav-link" href="admin-all-articles">Cms</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="myblogs">Myblogs</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="add-blog">Addblog</a>
+          </li>
+          <li class="nav-item  mx-3" id="login-id">
+            <a class="nav-link" href="login">Login</a>
+          </li>
+          <li class="nav-item mx-3" id="signup-id">
+            <a class="nav-link" href="signup">Signup</a>
+          </li>
+          <li class="nav-item mx-3" id="logout-id" style="display:none;">
+            <a class="nav-link" onclick="logout()">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <body {{!-- style='font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";  '--}}>
+
+
+  	{{{body}}}
+{{!-- 
+    <div class="footer" style="margin-bottom:5%;">
+                <p class="text-center text-black mb-4" style="font-size:20px;">Copyright © 2020, Blogsters</p>
+            </div> --}}
+    
+    <div class="footer bg-dark text-white mt-5 px-4" id="ft">
+      <div class="container" style="color:lightgrey; padding: 5% 5% 5% 5%;">
+        <div class="row">
+          <div class="col-4" style="margin-right: 5%;">
+              <h2 class="blg-footer" style="font-family: 'Chelsea Market', cursive; color:white;">BLOGSTERS</h2><br>
+              <p style='font-size:16px; font-weight: 500;'>Blogsters is a cool blogging website where you can read beautiful blogs of different categories like blogs on travel,food,lifestyles and many more.You can also create your own blog here.</p>
+          </div>
+          <div class="col-3">
+            <h3 class="info"><ul class="list-group" style="list-style-type: none; color: white;">Information</ul></h3><br>
+            <h5><li><i class="fas fa-chevron-right"></i><span style="margin-left:10px;">Home</span></li></h5>
+            <h5><li><i class="fas fa-chevron-right"></i><span style="margin-left:10px;">Myblogs</span></li></h>
+            <h5><li><i class="fas fa-chevron-right"></i><span style="margin-left:10px;">Addblog</span></li></h5>
+            <h5><li><i class="fas fa-chevron-right"></i><span style="margin-left:10px;">About</span></li></h5>
+            <h5><li><i class="fas fa-chevron-right"></i><span style="margin-left:10px;">Login</span></li></h5>
+            <h5><li><i class="fas fa-chevron-right"></i><span style="margin-left:10px;">Signup</span></li></h5>
+          </div>
+          <div class="col-3">
+              <h3 class="contact" style="color: white;">Contact Us</h3><br>
+              <h6><li><i class="fas fa-map-marker-alt"></i><span style="margin-left: 10px;">203 Fake St. Mountain View, San Francisco, California, USA</span></li></h6>
+            <h6><li><i class="fas fa-mobile-alt"></i><span style="margin-left: 10px;">+23354367562</span></li></h6>
+            <h6><li><i class="fas fa-envelope"></i><span style="margin-left: 10px;">xyz@gmail.com</span></li></h6>
+          </div>
+        </div>
+        <div class="footer mt-5 px-4">
+      <p class = "lead text-center copyright">Copyright ©, Blogsters, 2020</p>
+    </div>
+      </div>
+    </div>
+
+  
+{{!--  --}}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+

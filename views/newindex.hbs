@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="stylesheets/style1.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+<div class="outer">
+            <nav class="navbar navbar-light bg-light" id="navb">
+                <a class="navbar-brand" href="#">
+                    <img src="images/B.jpg" heigth="32px" width="32px"/> <span id="title"> BlogSter</span>
+                </a>
+            </nav>
+            <div class="content">
+                <div class="jumbotron" id="jumbo">
+                    <h1 class="display-4">Welcome folks...
+                    <img src="images/blog2.png" height="300" width="300" style="float: right;">
+                    </h1>
+                    <p class="lead">Welcome to this amazing and absolutely free platform where you can access articles and contribute by writing your own blogs.
+                    </p>
+                </div>
+
+                <!-- Default form login -->
+                <div class="sign-form">
+                    <form class="text-center border border-light p-5">
+
+                        <p class="h4 mb-4" >Sign in</p>
+                        <input type="email" id="email1" class="form-control mb-4" placeholder="E-mail">
+
+                        <input type="password" id="password1" class="form-control mb-4" placeholder="Password">
+
+                        
+
+                        <!-- Sign in button -->
+                        <button class="btn btn-info btn-block my-4" type="button" onclick="submitLoginForm()">Sign in</button>
+
+                        <!-- Register -->
+                        <p>Not a member?
+                            <a href="#signup">Register</a>
+                        </p>
+                    </form>
+                    <!-- Default form login -->
+                </div>
+                
+                
+                <hr class="my-4">
+
+
+                <div class="sign-form" id="signup">
+                    <!-- Default form register -->
+                    <form class="text-center border border-light p-5">
+
+                        <p class="h4 mb-4">Sign up</p>
+
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- First name -->
+                                <input type="text" id="name" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+
+                        <!-- Password -->
+                        <input type="password" id="password" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+                        
+                        <!-- Sign up button -->
+                        <button class="btn btn-info my-4 btn-block" type="button" onclick="submitRegisterForm()">Sign up</button>
+
+                        <!-- Social register -->
+                        {{!-- <p>or sign up with:</p>
+
+                        <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+                        <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+                        <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                        <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+ --}}
+                        <hr>
+
+                        <!-- Terms of service -->
+                        <p>By clicking
+                            <em>Sign up</em> you agree to our
+                            <a href="" target="_blank">terms of service</a>
+
+                    </form>
+                    <!-- Default form register -->
+                </div>
+
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="javascripts/login.js"></script>
+        <script type="text/javascript" src="javascripts/signup.js"></script>
